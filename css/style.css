@@ -1,0 +1,287 @@
+/*iPhoneおよび共通設定*/
+body {
+  width: 100%;
+  font-family: serif;
+  margin: 0;
+  padding: 0;
+}
+/*Loading画面のデザイン*/
+#loading {
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s;
+  background-color: #b6f6f593;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.spinner {
+  width: 100px;
+  height: 100px;
+  margin: 200px auto;
+  background-color: #fff;
+  border-radius: 100%;
+  animation: sk-scaleout 1s infinite ease-in-out;
+}
+/* Loading Animation */
+@keyframes sk-scaleout {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+/* Hide Loading Block */
+.menu-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background-color: #c4c4c4;
+  position: absolute;
+}
+.menu-btn span:before {
+  bottom: 8px;
+}
+.menu-btn span:after {
+  top: 8px;
+}
+
+#menu-btn-check:checked ~ .menu-btn span {
+  background-color: rgba(255, 255, 255, 0); /*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+#menu-btn-check {
+  display: none;
+}
+
+.menu-content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 80;
+  background-color: rgba(251, 214, 140, 0.727);
+}
+.menu-content ul {
+  padding: 70px 10px 0;
+}
+.menu-content ul li {
+  border-bottom: solid 1px #ffffff;
+  list-style: none;
+}
+.menu-content ul li a {
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 15px;
+  box-sizing: border-box;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 9px 15px 10px 0;
+  position: relative;
+}
+.menu-content ul li a::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-top: solid 2px #ffffff;
+  border-right: solid 2px #ffffff;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 11px;
+  top: 16px;
+}
+
+.menu-content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 100%; /*leftの値を変更してメニューを画面外へ*/
+  z-index: 80;
+  background-color: rgba(251, 214, 140, 0.6);
+  transition: all 0.5s; /*アニメーション設定*/
+}
+
+#menu-btn-check:checked ~ .menu-content {
+  left: 0; /*メニューを画面内へ*/
+}
+
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+a :hover {
+  color: #6c5f45;
+}
+.muku_top {
+  display: flex;
+  margin-left: 20px;
+}
+#header {
+  display: flex;
+  margin-top: 3px;
+  align-items: center;
+}
+#portofolio_title {
+  color: #d0d0d0;
+}
+#portofolio_title {
+  font-size: 40px;
+  background-color: #f0f8ff;
+  padding: 120px;
+  text-align: center;
+}
+#work {
+  background-color: #dcdcdc;
+  padding: 120px;
+}
+#work_title {
+  font-size: 30px;
+  padding-bottom: 80px;
+  color: #6c5f45;
+  text-align: center;
+}
+.work_title {
+  display: flex;
+}
+.capture {
+  display: flex;
+  text-align: center;
+  gap: 10px;
+}
+
+#enoshima,
+#company,
+#weather {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+.work_text {
+  display: flex;
+  text-align: center;
+}
+#enoshima_text,
+#mukunoki_text,
+#weatherapp_text {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 30%;
+  color: #6c5f45;
+}
+#about {
+  background-color: #ddd8af;
+  padding: 100px;
+  text-align: center;
+  color: #b09c74;
+}
+.About_flex {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+#about_title {
+  font-size: 30px;
+  padding-bottom: 80px;
+  color: #b09c74;
+}
+.profile {
+  margin-left: 120px;
+}
+.profile p {
+  margin: 20px;
+}
+.profile p :first-child {
+  border-bottom: #6b8e23;
+}
+#profile_text,
+#skill_text {
+  font-size: 25px;
+}
+#about img {
+  height: 400px;
+}
+#contact {
+  padding: 120px;
+  background-color: #c6ae8f;
+  color: #d0d0d0;
+  text-align: center;
+}
+#contact_title {
+  font-size: 30px;
+  text-align: center;
+}
+.contact_text {
+  margin: 30px;
+}
+.adress_tape {
+  width: 50%;
+  height: 35px;
+  margin: -25px auto 0;
+  background: #4e4e4e;
+  background: #af8c39;
+  transform: rotate(-3deg);
+  opacity: 0.2;
+}
+.adress {
+  color: #6c5f45;
+  display: inline-block;
+  padding: 1em 1.5em;
+  border: double 4px #bc853e; /*線*/
+  background-color: #bb9304af;
+  text-align: center;
+}
+footer {
+  background-color: #947955;
+}
+#copyright {
+  padding: 10px;
+  text-align: center;
+  color: #d0d0d0;
+}
+/*iPadサイズの設定*/
+@media screen and (max-width: 768px) {
+  .my_picture,
+  .profile {
+    margin: 0;
+    padding: 0;
+  }
+  .About_flex {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin-left: -45px;
+  }
+}
+/*iPhoneサイズの設定*/
+@media screen and (max-width: 480px) {
+}
