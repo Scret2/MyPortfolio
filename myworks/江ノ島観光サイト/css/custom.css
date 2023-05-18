@@ -1,0 +1,324 @@
+/* CSS */
+/*-------iPhone用の設定-------*/
+#index {
+  margin-left: 100px;
+}
+p,
+li {
+  font-size: 15px;
+}
+
+html,
+body {
+  font-family: serif;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #87cefa;
+  color: #f5f5f5;
+}
+
+.header a {
+  text-decoration: none;
+  color: #fff;
+}
+.header h1 {
+  display: flex;
+  justify-content: space-around;
+  border-style: dotted;
+}
+
+#header_text,
+.access {
+  max-width: 850px;
+}
+.access h2 {
+  text-decoration: underline dotted orange;
+}
+
+.textbox ul li {
+  list-style: none;
+}
+
+.textbox h2 {
+  text-decoration: underline dotted orange;
+}
+.access {
+  list-style: none;
+  margin-bottom: 20px;
+  width: 900px;
+  padding-bottom: 20px;
+}
+.access p:last-of-type {
+  font-weight: bold;
+  font-size: 13pt;
+  text-decoration: underline;
+}
+
+.schedule h3 {
+  background-color: mediumblue;
+  width: 100%;
+  text-align: center;
+}
+.sightseeing h4 {
+  background-color: crimson;
+  text-align: center;
+}
+.sightseeing a {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+#mapid {
+  padding: 0px;
+  width: 480px;
+  height: 320px;
+  width: 850px;
+}
+.textbox {
+  border-bottom: 3px dashed;
+  max-width: 553px;
+  padding-left: 300px;
+  margin-left: 0;
+}
+
+#text {
+  border: dotted yellow;
+}
+.about {
+  text-align: center;
+  background-color: rgb(95, 197, 231);
+  border-radius: 10px;
+}
+.aquarium,
+.sightseeing,
+.hotspring {
+  width: 850px;
+}
+
+.sightseeing_fhoto,
+.sightseeing_fhoto_2 {
+  display: grid;
+  grid-template-columns: 280px 280px 280px;
+  gap: 5px;
+  padding-left: 0;
+}
+#about {
+  color: #583822;
+  background-color: #ffdead;
+  padding: 30px;
+  margin-top: 100px;
+  text-align: center;
+  list-style: none;
+}
+/*planA.html*/
+.balloon {
+  position: relative;
+  width: fit-content;
+  max-width: 200px;
+  padding: 10px;
+  background-color: #f3bebe;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.balloon:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -10px;
+  border-top: 10px solid #f0f0f0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+.guid {
+  text-align: center;
+}
+
+.planA_eska {
+  display: flex;
+  margin: 10px 20px 20px 20px;
+}
+
+.planA_eska_2,
+.planA_hetumiya,
+.planA_nakatumiya,
+.planA_candle,
+.planA_candle_2 {
+  display: flex;
+  margin: 20px;
+}
+.planA_title {
+  color: #583822;
+  text-align: center;
+  margin: 100px;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 400px;
+  height: 200px;
+  margin: 50px auto;
+}
+.planA_title h2 {
+  font-size: 50px;
+  align-items: center;
+}
+
+.planA_eska h4,
+.planA_hetumiya h4,
+.planA_nakatumiya h4,
+.planA_candle h4 {
+  font-size: 20px;
+}
+
+.planA_eska h3,
+.planA_hetumiya h3,
+.planA_nakatumiya h3,
+.planA_candle h3 {
+  font-size: 25px;
+}
+
+.planA_eska span,
+.planA_eska_2 span,
+.planA_hetumiya span,
+.planA_nakatumiya span,
+.planA_candle span {
+  display: block;
+  text-align: left;
+  margin-right: 50px;
+  width: 50%;
+  height: 550px;
+}
+.planA_candle_ span {
+  margin-bottom: 30px;
+}
+.planA_candle_2 span {
+  width: 50%;
+  margin-top: 40px;
+  margin-right: 50px;
+}
+.planA_eska h2,
+.planA_hetumiya h2,
+.planA_nakatumiya h2,
+.planA_candle h2 {
+  font-size: 40px;
+}
+.planA_eska span h4,
+.planA_hetumiya h4,
+.planA_nakatumiya h4,
+.planA_candle h4 {
+  border-bottom: #583822 solid 1px;
+  padding-bottom: 10px;
+}
+.planA_eska_2 img {
+  margin-bottom: 40px;
+}
+
+.planA_candle_2 img {
+  max-height: 650px;
+}
+.planA_eska img,
+.planA_eska_2 img,
+.planA_hetumiya img,
+.planA_nakatumiya img,
+.planA_candle img,
+.planA_candle_2 img {
+  width: 50%;
+  text-align: end;
+}
+
+/*planB.html*/
+.planB_title {
+  color: #583822;
+  text-align: center;
+  margin: 100px;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 400px;
+  height: 200px;
+  margin: 50px auto;
+}
+
+.planB_street {
+  display: flex;
+  margin: 10px 20px 20px 20px;
+}
+
+.planB_tacosen {
+  display: flex;
+  margin: 20px 20px 60px 20px;
+}
+
+.planB_shrine,
+.planB_okutumiya,
+.planB_chigokahuti,
+.planB_iwaya {
+  display: flex;
+  margin: 20px;
+}
+
+.planB_street h4,
+.planB_shrine h4,
+.planB_okutumiya h4,
+.planB_chigokahuti h4,
+.planB_iwaya h4 {
+  font-size: 20px;
+}
+
+.planB_street h3,
+.planB_shrine h3,
+.planB_okutumiya h3,
+.planB_chigokahuti h3,
+.planB_iwaya h3 {
+  font-size: 25px;
+}
+
+.planB_street span,
+.planB_tacosen span,
+.planB_shrine span,
+.planB_okutumiya span,
+.planB_chigokahuti span,
+.planB_iwaya span {
+  text-align: left;
+  margin-right: 50px;
+  width: 50%;
+  height: 550px;
+}
+
+.planB_street h2,
+.planB_shrine h2,
+.planB_okutumiya h2,
+.planB_chigokahuti h2,
+.planB_iwaya h2 {
+  font-size: 40px;
+}
+
+.planB_street span h4,
+.planB_shrine h4,
+.planB_okutumiya h4,
+.planB_chigokahuti h4,
+.planB_iwaya h4 {
+  border-bottom: #583822 solid 1px;
+  padding-bottom: 10px;
+}
+
+.planB_street img,
+.planB_tacosen img,
+.planB_shrine img,
+.planB_okutumiya img,
+.planB_chigokahuti img,
+.planB_iwaya img {
+  width: 50%;
+  text-align: end;
+}
+
+.planB_tacosen img {
+  margin-bottom: 178px;
+}
+.planB_tacosen {
+  align-items: center;
+}

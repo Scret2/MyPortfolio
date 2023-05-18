@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="./images/S.png">
+	<title>江ノ島 MAP</title>
+	
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+	integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+	<link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+	<div class="container">
+
+	<header class="header">
+	<h1>江ノ島　観光</h1>
+</header>
+
+	<div id="index">
+
+	<div id="img__inner">
+<img decoding="async" id="img" src="images/enoshima_home.jpeg" width=850px  height="480px">
+
+	</div>
+
+	<div id="header_text">
+		<p>江ノ島の1日のモデルコースをまとめました。東京都心からのアクセス情報、タイムスケジュール例も書きましたのでぜひ、参考にしてください。</p>
+	</div>
+
+	<div class="train_image"><img src="images/train.jpg" width="850px" height="480px"></div>
+	<div class="access">
+		<h2>電車でのアクセス</h2>
+	<p>東京の都心部から電車で約60分というアクセスの良さも魅力です。「新宿」駅から「片瀬江ノ島」駅まで、小田急江ノ島線「特急ロマンスカー」なら直通で約69分。小田急江ノ島線、またはJR湘南新宿ラインから「藤沢」駅経由でも乗車時間60分ほどで「片瀬江ノ島駅」<br>に到着します。
+<p>	「東京駅」から行く場合、JR東海道線で「藤沢」駅か「大船」駅を経由して江ノ電か湘南モノレールを利用しましょう。
+	江ノ電「藤沢」駅から「江ノ島」駅まではおよそ10分、湘南モノレール「大船」駅から「湘南江の島」駅まではおよそ14分で到着します。</p>
+		
+		</p>
+	<p>駅から江の島入り口までの所要時間</p>
+<li>江ノ島電鉄「江ノ島」駅から徒歩約15分</li>
+<li>小田急電鉄「片瀬江ノ島」駅から徒歩約12分</li>
+<li>湘南モノレール「湘南江の島」駅から徒歩約17分</li>
+</div>
+
+	<div id="main">
+	<div id="mapid"></div>
+
+	<div class="textbox">
+		<h2>タイムスケジュール</h2>
+		<ul>
+		<li>AM<time>10:00</time>　新江ノ島水族館<br></li>
+		<li>PM<time>12:00</time>　江ノ島到着<br></li>
+		<li>PM<time>12:00</time>　〜江ノ島観光〜<br></li>
+		<li>PM<time>17:00</time>　江ノ島アイランドスパで温泉！<br></li>
+	</ul>
+	</div>
+</div>
+<div class="schedule">
+<div class="aquarium">
+   <h3>AM 10:00~  湘南エリアの人気スポット　新江ノ島水族館</h3>
+   <img src="images/aquarium.jpeg" width="850px" height="480px">
+   <p id="text">新江ノ島水族館は江の島の近くにある水族館。イルカショーの会場は江の島と富士山を眺めれる好立地で、クラゲを幻想的に展示したクラゲファンタジーホールが見所。</p>
+   <div class="about">
+<p>SPOT情報</p>
+	<p>住所 神奈川県藤沢市片瀬海岸2-19-1<br></p>
+	<p>営業時間	[12-2月]10:00-17:00(最終入場16:00)<br>
+	[3-11月]9:00-17:00(最終入場16:00)<br>
+	※春の大型連休・夏休み、年末年始、イベントにより変更あり<br>
+	定休日	無休(施設点検等臨時休館あり)<br></p>
+	<p>料金	【入場料】<br>
+	[大人]2,500円<br>
+	[高校生]1,700円<br>
+	[小・中学生]1,200円<br>
+	[幼児(3歳以上)]800円<br>
+	【夜】3,001-5,000円<br></p>
+	電話番号	0466299960
+   </div>
+</div>
+<div class="sightseeing">
+	<h3>PM 12:00~  〜江ノ島観光〜</h3>
+	<div class="balloon">
+		<div class="guide">
+		  <h5>お好きなプランをどうぞ！プランAコース、プランBコースをよりくわしく知ることができます！</h5>
+		</div>
+	  </div>
+	<a href="planA.html"><h4>プランAコース　エスカー〜江ノ島シーキャンドル(展望灯台)</h4></a>
+	<ul class="sightseeing_fhoto">
+		<img src="images/enoshima_esuka.jpg" width="280px">
+		<img src="images/nakatumiya.jpeg" width="280px">
+		<img src="images/enoshima_candle.jpg" width="280px">
+	</ul>
+	<a href="planB.html"><h4>プランBコース　江ノ島弁財天仲見世通り〜江ノ島岩屋</h4></a>
+	<ul class="sightseeing_fhoto_2">
+		<img src="images/enoshima_streat.jpeg" width="280px">
+		<img src="images/chigokahuti.jpg" width="280px">
+		<img src="images/enoshima_iwaya.jpeg" width="280px">
+	</ul>
+</div>
+
+<div class="hotspring">
+	<h3>PM 17:00~   江ノ島アイランドスパで温泉！</h3>
+	<img src=images/spring.jpeg width=850px height=480px>
+	<p id="text">地下1,500ｍから湧き出る天然温泉やスパ・プールを活用した日帰り温泉施設。<br>江の島から見渡す湘南の海、そして雄大な富士山をバックに望む最高のロケーション。
+		江の島唯一の天然温泉が心身共にゆっくりとあなたを癒します。</p>
+	<div class="about">
+		<p>SPOT情報</p>
+<p>住所	神奈川県藤沢市江の島2-1-6<br></p>
+<p>営業時間	7:00-21:00(最終入館受付20:00/プールエリア 営業終了20:00)<br>
+定休日	[4-9月]木<br>
+[10-3月]月、木<br>
+※休館日が祝と重なる場合は営業<br></p>
+<p>料金	【ワンデイスパ(4-9月)】<br>
+[大人]3,000円<br>
+[小学生]1,500円<br>
+
+【ワンデイスパ(10-3月)】<br>
+[大人]2,500円<br>
+[小学生]1,250円<br>
+
+
+【ナイトスパ】<br>
+[大人]2,000円<br>
+[小学生]1,000円<br>
+
+【富士山の見える天然温泉プラン】<br>
+[大人]1,500円<br>
+[小学生]750円<br>
+
+<p>駐車場	なし<br></p>
+電話番号	0466290688<br>
+クレジットカード	可(VISA、MasterCard、JCB、銀聯)<br>
+電子マネー	可(Suica、PASMO、iD)<br>
+Wi-Fi	なし
+電源	なし<br>
+喫煙	可(喫煙所を利用)
+
+	</div>
+</div>
+</div>
+</div>
+<footer>
+	<ul id="about">
+        <li id="company">江ノ島観光サイト</li>
+		<p id="copyright"><small>Copyright &copy;Enoshima sightseeing
+		</small></p>
+      </ul>
+	</footer>
+</div>
+	<!-- JavaScript -->
+	<script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+	integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+	crossorigin=""></script>
+	<script src="./main.js"></script>
+</body>
+</html>
