@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 /*Loading画面のデザイン*/
 #loading {
   width: 100vw;
@@ -44,7 +45,6 @@ body {
 }
 a {
   color: #fff;
-  text-decoration: none;
 }
 a :hover {
   color: #6c5f45;
@@ -74,6 +74,10 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 10px 0px 10px 10px;
+  text-decoration: none;
+}
+#navbar a {
+  text-decoration: none;
 }
 #navbar li {
   padding-left: 5px;
@@ -212,18 +216,21 @@ nav {
 }
 .footer {
   margin-top: 60px;
+  margin-bottom: 60px;
   text-align: center;
-}
-.footer img {
-  margin-left: 33px;
 }
 #about {
   border-radius: 10px;
   list-style-type: none;
-  margin-top: 3px;
   padding-top: 6px;
-  padding-left: 30px;
   padding-bottom: 6px;
+}
+.footer {
+  padding-top: 6px;
+}
+#myportfolio {
+  list-style-type: none;
+  margin-top: 50px;
 }
 .home_building li {
   list-style: none;
@@ -546,5 +553,11 @@ figcaption :hover {
 
   .rinen_txt {
     margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #news ul li {
+    font-size: 20px;
   }
 }
