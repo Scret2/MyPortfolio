@@ -1,18 +1,16 @@
 /* CSS */
 /*-------iPhone用の設定-------*/
-#index {
-  margin-left: 100px;
+.container {
+  text-align: center;
+  overflow-x: hidden;
 }
 p,
 li {
   font-size: 15px;
 }
-
 html,
 body {
   font-family: serif;
-  width: 100%;
-  height: 100%;
   margin: 0px;
   padding: 0px;
   background-color: #87cefa;
@@ -23,16 +21,27 @@ body {
   text-decoration: none;
   color: #fff;
 }
+
 .header h1 {
   display: flex;
   justify-content: space-around;
   border-style: dotted;
 }
-
-#header_text,
-.access {
-  max-width: 850px;
+#img {
+  width: 100%;
+  height: calc(width * 2);
+  background-position: center;
+  background-size: 30%;
+  background-repeat: no-repeat;
 }
+
+#img_inner img,
+.train_image img,
+.hotspring img,
+.aquarium img {
+  object-fit: cover;
+}
+
 .access h2 {
   text-decoration: underline dotted orange;
 }
@@ -47,7 +56,6 @@ body {
 .access {
   list-style: none;
   margin-bottom: 20px;
-  width: 900px;
   padding-bottom: 20px;
 }
 .access p:last-of-type {
@@ -61,6 +69,10 @@ body {
   width: 100%;
   text-align: center;
 }
+.sightseeing {
+  margin: 0 auto;
+  width: 100%;
+}
 .sightseeing h4 {
   background-color: crimson;
   text-align: center;
@@ -69,17 +81,40 @@ body {
   text-decoration: none;
   color: #f5f5f5;
 }
+.balloon_index {
+  position: relative;
+  width: fit-content;
+  max-width: 200px;
+  padding: 10px;
+  background-color: #f3bebe;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.balloon_index:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -10px;
+  border-top: 10px solid #f0f0f0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+.guid_index {
+  text-align: center;
+}
+
 #mapid {
   padding: 0px;
-  width: 480px;
   height: 320px;
   width: 850px;
+  margin: 0 auto;
 }
 .textbox {
   border-bottom: 3px dashed;
-  max-width: 553px;
-  padding-left: 300px;
-  margin-left: 0;
 }
 
 #text {
@@ -90,18 +125,14 @@ body {
   background-color: rgb(95, 197, 231);
   border-radius: 10px;
 }
-.aquarium,
-.sightseeing,
-.hotspring {
-  width: 850px;
-}
 
-.sightseeing_fhoto,
-.sightseeing_fhoto_2 {
-  display: grid;
-  grid-template-columns: 280px 280px 280px;
-  gap: 5px;
-  padding-left: 0;
+.sightseeing_photo {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0px;
 }
 #about {
   color: #583822;
@@ -110,6 +141,10 @@ body {
   margin-top: 100px;
   text-align: center;
   list-style: none;
+}
+.myportfolio {
+  color: #583822;
+  font-size: 15px;
 }
 /*planA.html*/
 .balloon {
@@ -190,7 +225,7 @@ body {
   text-align: left;
   margin-right: 50px;
   width: 50%;
-  height: 550px;
+  max-height: 550px;
 }
 .planA_candle_ span {
   margin-bottom: 30px;
@@ -243,6 +278,11 @@ body {
   margin: 50px auto;
 }
 
+.planB_title h2 {
+  font-size: 50px;
+  align-items: center;
+}
+
 .planB_street {
   display: flex;
   margin: 10px 20px 20px 20px;
@@ -286,7 +326,7 @@ body {
   text-align: left;
   margin-right: 50px;
   width: 50%;
-  height: 550px;
+  max-height: 550px;
 }
 
 .planB_street h2,
@@ -321,4 +361,182 @@ body {
 }
 .planB_tacosen {
   align-items: center;
+}
+
+/*iPadの設定*/
+@media screen and (max-width: 950px) {
+  /*index.html*/
+  .container {
+    background-color: #583822;
+  }
+  .sightseeing_photo img {
+    width: 230px;
+  }
+  #mapid {
+    width: 100%;
+  }
+  .schedule h3 {
+    background-color: rgb(184, 184, 0);
+  }
+  .sightseeing h4 {
+    background-color: rgb(218, 83, 110);
+  }
+  .about {
+    background-color: rgb(218, 83, 110);
+  }
+
+  /*planA.html*/
+  .planA_eska img,
+  .planA_eska_2 img,
+  .planA_hetumiya img,
+  .planA_nakatumiya img,
+  .planA_candle img {
+    height: 280px;
+    align-items: center;
+  }
+  .planA_candle_2 img {
+    height: 420px;
+  }
+
+  .planA_eska span h4,
+  .planA_hetumiya h4,
+  .planA_nakatumiya h4,
+  .planA_candle h4 {
+    border-bottom: #f7f7f7 solid 1px;
+  }
+  /*planB.html*/
+  .planB_street img,
+  .planB_shrine img,
+  .planB_okutumiya img,
+  .planB_chigokahuti img,
+  .planB_iwaya img {
+    max-height: 280px;
+    align-items: center;
+  }
+  .planB_tacosen img {
+    max-height: 500px;
+  }
+
+  .planB_street span h4,
+  .planB_shrine h4,
+  .planB_okutumiya h4,
+  .planB_chigokahuti h4,
+  .planB_iwaya h4 {
+    border-bottom: #f7f7f7 solid 1px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  /*index.html*/
+  .balloon {
+    margin: 0 auto;
+  }
+
+  #img_inner img,
+  .train_image img,
+  .hotspring img,
+  .aquarium img {
+    width: 100%;
+    max-height: 250px;
+  }
+  .sightseeing_photo img {
+    width: 180px;
+  }
+
+  /*planA.html*/
+  .planA_eska,
+  .planA_eska_2,
+  .planA_hetumiya,
+  .planA_nakatumiya,
+  .planA_candle,
+  .planA_candle_2 {
+    display: grid;
+    grid-column: 1fr;
+    margin: 0;
+  }
+  .planA_eska img {
+    margin-bottom: 20px;
+  }
+  .planA_eska span,
+  .planA_eska_2 span,
+  .planA_hetumiya span,
+  .planA_nakatumiya span,
+  .planA_candle span,
+  .planA_candle_2 span {
+    text-align: center;
+    width: 100%;
+  }
+
+  .planA_eska img,
+  .planA_eska_2 img,
+  .planA_hetumiya img,
+  .planA_nakatumiya img,
+  .planA_candle img,
+  .planA_candle_2 img {
+    width: 100%;
+    height: 310px;
+  }
+  .planA_candle_2 img {
+    height: 400px;
+  }
+  .planA_hetumiya img,
+  .planA_nakatumiya img {
+    margin-bottom: 40px;
+  }
+
+  /*planB.html*/
+  .planB_street,
+  .planB_tacosen,
+  .planB_shrine,
+  .planB_okutumiya,
+  .planB_chigokahuti,
+  .planB_iwaya {
+    display: grid;
+    grid-column: 1fr;
+    margin: 0;
+  }
+
+  .planB_street span,
+  .planB_tacosen span,
+  .planB_shrine span,
+  .planB_okutumiya span,
+  .planB_chigokahuti span,
+  .planB_iwaya span {
+    text-align: center;
+    width: 100%;
+  }
+
+  .planB_street img,
+  .planB_shrine img,
+  .planB_okutumiya img,
+  .planB_chigokahuti img,
+  .planB_iwaya img {
+    width: 100%;
+    height: 310px;
+  }
+  .planB_tacosen img {
+    width: 100%;
+    height: 500px;
+  }
+  .planB_shrine img,
+  .planB_okutumiya img,
+  .planB_chigokahuti img {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #img_inner img,
+  .train_image img,
+  .hotspring img,
+  .aquarium img {
+    height: 300px;
+  }
+  .planA_title,
+  .planB_title {
+    width: 100%;
+    height: calc(width / 2);
+  }
+  .sightseeing_photo img {
+    width: 135px;
+  }
 }

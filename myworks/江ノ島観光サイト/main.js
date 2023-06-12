@@ -21,18 +21,4 @@ $(document).ready(() => {
     accessToken: ACCESS_TOKEN, // アクセストークン
     id: "mapbox/streets-v11", // マップの種類
   }).addTo(map);
-
-  const pics_src = ["images/enoshima_home.jpeg", "images/enoshima_header_2.jpg", "images/enoshima_header_3.jpg", "images/enoshima_header_4.jpg"];
-  let num = -1;
-
-  function slideshow_timer() {
-    /*imgの数-1*/ if (num === 3) {
-      num = 0;
-    } else {
-      num++;
-    }
-    document.getElementById("img").src = pics_src[num];
-  }
-
-  setInterval(slideshow_timer, 4000);
 });
