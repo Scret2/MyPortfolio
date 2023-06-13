@@ -453,8 +453,10 @@ figcaption :hover {
   text-align: left;
   background-color: #e6bfab;
   margin: 40px 30px 30px 30px;
+  line-height: 1.5;
   padding-top: 50px;
-  padding-left: 160px;
+  padding-left: 100px;
+  padding-right: 100px;
   padding-bottom: 50px;
 }
 
