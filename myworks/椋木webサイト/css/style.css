@@ -186,6 +186,7 @@ nav {
   font-size: 30px;
   font-family: "serif";
   margin-bottom: 20px;
+  padding-bottom: 5px;
   border-bottom: solid orange;
 }
 .build p,
@@ -219,9 +220,6 @@ nav {
   margin-bottom: 60px;
   text-align: center;
 }
-.footer a:hover {
-  color: #6c5f45;
-}
 #about {
   border-radius: 10px;
   list-style-type: none;
@@ -230,6 +228,9 @@ nav {
 }
 .footer {
   padding-top: 6px;
+}
+.footer a:hover {
+  color: #6c5f45;
 }
 #myportfolio {
   list-style-type: none;
