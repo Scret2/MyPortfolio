@@ -24,14 +24,13 @@ img {
   text-align: center;
   margin: auto;
   width: 335px;
-  height: 520px;
 }
 footer {
   text-align: center;
+    margin-top: 70px;
 }
 #myportfolio {
   list-style-type: none;
-  margin-top: 20px;
 }
 a {
   text-decoration: none;
