@@ -3,7 +3,6 @@ let weatherCodes =
   // Ready
   $(document).ready(() => {
     console.log("Ready!!");
-    // Axiosを使ってみる!!
     //210000　岐阜県
     const option = { responseType: "blob" };
     axios.get("https://www.jma.go.jp/bosai/forecast/data/forecast/210000.json", option).then((res) => {
@@ -27,7 +26,7 @@ let weatherCodes =
               $("#mino_weather").append(arr[0]["timeSeries"][0]["areas"][0]["weathers"][0], "<br>");
               $("#mino_weather").append(arr[0]["timeSeries"][0]["areas"][0]["winds"][0], "<br>");
               let wcode = arr[0]["timeSeries"][0]["areas"][0]["weatherCodes"][0];
-              wcode = 400;
+              
               weatherCodes = $("#mino_weather").append(`<img src="images/` + tr[wcode] + `">`);
               $("#myportfolio").css("color", "#ff8c00");
               if (Math.floor(wcode / 100) == 2) {
