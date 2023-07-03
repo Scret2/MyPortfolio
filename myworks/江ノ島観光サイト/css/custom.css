@@ -21,11 +21,14 @@ body {
   text-decoration: none;
   color: #fff;
 }
-
 .header h1 {
   display: flex;
   justify-content: space-around;
   border-style: dotted;
+}
+#header_text {
+  margin: 0;
+  padding: 0;
 }
 #img {
   width: 100%;
@@ -55,19 +58,19 @@ body {
 }
 .access {
   list-style: none;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
 }
 .access p:last-of-type {
   font-weight: bold;
   font-size: 13pt;
   text-decoration: underline;
 }
-
 .schedule h3 {
-  background-color: mediumblue;
+  background-color: #f08300;
   width: 100%;
   text-align: center;
+}
+.aquarium .aquarium_target {
+  background-color: blue;
 }
 .sightseeing {
   margin: 0 auto;
@@ -81,12 +84,15 @@ body {
   text-decoration: none;
   color: #f5f5f5;
 }
+.sightseeing a :hover {
+  background-color: #f08300;
+}
 .balloon_index {
   position: relative;
   width: fit-content;
   max-width: 200px;
   padding: 10px;
-  background-color: #f3bebe;
+  background-color: #f08300;
   border-radius: 10px;
   margin: 0 auto;
 }
@@ -112,9 +118,12 @@ body {
   height: 320px;
   width: 850px;
   margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 .textbox {
   border-bottom: 3px dashed;
+  text-align: center;
 }
 
 #text {
@@ -134,6 +143,7 @@ body {
   margin: 0 auto;
   padding: 0px;
 }
+
 #about {
   color: #583822;
   background-color: #ffdead;
@@ -375,11 +385,20 @@ body {
   #mapid {
     width: 100%;
   }
+  .aquarium .aquarium_target {
+    background-color: #87cefa;
+  }
   .schedule h3 {
     background-color: rgb(184, 184, 0);
   }
+  .balloon_index {
+    background-color: #f3bebe;
+  }
   .sightseeing h4 {
     background-color: rgb(218, 83, 110);
+  }
+  .sightseeing a :hover {
+    background-color: #87cefa;
   }
   .about {
     background-color: rgb(218, 83, 110);
