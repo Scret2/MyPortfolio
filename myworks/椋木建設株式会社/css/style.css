@@ -673,7 +673,7 @@ input.size {
     height: 3px;
     width: 25px;
     border-radius: 3px;
-    background-color: #c4c4c4;
+    background-color: #787878;
     position: absolute;
   }
   .menu-btn span:before {
@@ -712,7 +712,7 @@ input.size {
     padding: 70px 10px 0;
   }
   .menu-content ul li {
-    border-bottom: solid 1px #ffffff;
+    border-bottom: solid 1px #d9ff00;
     list-style: none;
   }
   .menu-content ul li a {
@@ -721,7 +721,7 @@ input.size {
     width: 100%;
     font-size: 15px;
     box-sizing: border-box;
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     padding: 9px 15px 10px 0;
     position: relative;
@@ -745,7 +745,7 @@ input.size {
     top: 0;
     left: 100%; /*leftの値を変更してメニューを画面外へ*/
     z-index: 80;
-    background-color: #dadada;
+    background-color: #000000;
     transition: all 0.5s; /*アニメーション設定*/
   }
 
