@@ -21,4 +21,18 @@ $(document).ready(() => {
     accessToken: ACCESS_TOKEN, // アクセストークン
     id: "mapbox/streets-v11", // マップの種類
   }).addTo(map);
+
+  const guideText = document.querySelector(".guide_index h5");
+
+  function changeTextOnResize() {
+    if (window.innerWidth <= 768) {
+      guideText.textContent = "お好きなプランをどうぞ！プランAコース、プランBコースをタップすることでよりくわしく知ることができます！";
+    } else {
+      guideText.textContent = "お好きなプランをどうぞ！プランAコース、プランBコースをクリックすることでよりくわしく知ることができます！";
+    }
+  }
+
+  changeTextOnResize(); // 初期表示時にテキストを設定
+
+  window.addEventListener("resize", changeTextOnResize); // ウィンドウのリサイズイベントに対するリスナー
 });
