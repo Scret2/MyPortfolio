@@ -142,6 +142,20 @@ body {
 a :hover {
   color: #6c5f45;
 }
+
+/*----------------------------
+scroll_up ｜下から上へ出現
+----------------------------*/
+.scroll_up {
+  transition: 0.8s ease-in-out;
+  transform: translateY(30px);
+  opacity: 0;
+}
+.scroll_up.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 .muku_top {
   display: flex;
   margin-left: 20px;
@@ -151,18 +165,28 @@ a :hover {
   margin-top: 3px;
   align-items: center;
 }
-#portfolio_title {
+#portfoliotop {
+  padding: 205px;
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(90deg, #f0f8ff 0%, #f0f8ff 50%, #fff 50%, #fff 100%);
+  font-family: "Courier New", Courier, monospace;
+}
+#portfolio_title p {
   color: #d0d0d0;
+  text-align: center;
+}
+#portfolio_title ul {
+  display: flex;
+  justify-content: space-around;
 }
 #portfolio_title {
-  font-size: 40px;
-  background-color: #f0f8ff;
+  font-size: 70px;
   padding: 120px;
-  text-align: center;
 }
 #work {
   background-color: #dcdcdc;
-  padding: 120px;
+  padding: 205px;
 }
 #work_title {
   font-size: 30px;
@@ -316,6 +340,9 @@ footer {
 }
 /*iPadサイズの設定*/
 @media screen and (max-width: 768px) {
+  #portfolio_title {
+    shape-outside: polygon(0% 0%, 20%);
+  }
   #work {
     padding-left: 0;
     padding-right: 0;
