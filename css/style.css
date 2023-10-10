@@ -207,18 +207,16 @@ scroll_right ｜右から出現
   color: #d0d0d0;
   text-align: center;
 }
-/* #portfolio_title ul {
+#portfolio_title ul {
   display: flex;
   justify-content: space-around;
-} */
+}
 
 .left_txt {
-  margin-left: -50px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 .right_txt {
-  margin-left: 50px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 #portfolio_title {
   font-size: 100px;
@@ -321,9 +319,6 @@ scroll_right ｜右から出現
 .profile p {
   margin: 20px;
 }
-.profile p :first-child {
-  border-bottom: #6b8e23;
-}
 #profile_text,
 #skill_text {
   font-size: 25px;
@@ -384,7 +379,7 @@ footer {
 /*iPadサイズの設定*/
 @media screen and (max-width: 768px) {
   #portfolio_title {
-    shape-outside: polygon(0% 0%, 20%);
+    font-size: 70px;
   }
   #work {
     padding-left: 0;
@@ -393,9 +388,16 @@ footer {
 }
 /*iPhoneサイズの設定*/
 @media screen and (max-width: 480px) {
-  .name_br {
+  #portfolio_title {
+    padding: 0px;
+  }
+  #portfolio_title ul {
     display: block;
-    content: "";
-    margin-top: 20px;
+  }
+  .left_txt {
+    margin-left: -50px;
+  }
+  .right_txt {
+    margin-left: 50px;
   }
 }
