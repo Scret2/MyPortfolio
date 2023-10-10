@@ -91,10 +91,10 @@ body {
 
 @media screen and (min-width: 950px) {
   .carousel-item {
-    height: 32rem;
+    height: vw;
   }
   .carousel-item > img {
     height: auto;
-    max-height: 32rem;
+    max-height: 56vw;
   }
 }

@@ -13,8 +13,8 @@ body {
   font-family: serif;
   margin: 0px;
   padding: 0px;
-  background-color: #87cefa;
   color: #f5f5f5;
+  background: repeating-linear-gradient(60deg, #87cefa, #87cefa 20px, #0b8dde 0, #0b8dde 35px);
 }
 
 .header a {
@@ -37,7 +37,9 @@ body {
   background-size: 30%;
   background-repeat: no-repeat;
 }
-
+.carousel-item img {
+  object-fit: cover;
+}
 #img_inner img,
 .train_image img,
 .hotspring img,
@@ -557,5 +559,13 @@ body {
   }
   .sightseeing_photo img {
     width: 135px;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .header h1 {
+    font-size: 65px;
+    font-family: monospace;
+    transform: skewY(3deg);
   }
 }
