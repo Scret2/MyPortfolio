@@ -29,6 +29,9 @@ body {
 #header_text {
   margin: 0;
   padding: 0;
+  margin-bottom: 30px;
+  border: dotted yellow;
+  background-color: rgba(135, 206, 250, 0.6);
 }
 #img {
   width: 100%;
@@ -46,7 +49,18 @@ body {
 .aquarium img {
   object-fit: cover;
 }
-
+.blackboardarea {
+  margin-top: 30px;
+  font-family: "Chalkduster", cursive; /* チョークで書かれたようなフォント (適切なフォントを指定してください) */
+  text-shadow: 1px 1px 3px #888; /* チョークの粉塗りつぶしのエフェクト */
+  list-style: none;
+  background: #006633; /* ボックス背景色 */
+  color: #fff; /* 文章色 */
+  border: 8px solid #b2771f; /* 枠線 */
+  border-radius: 3px; /* 角の丸み */
+  box-shadow: 0 0 5px #333, 0 0 5px #555 inset;
+  padding: 1em;
+}
 .access h2 {
   text-decoration: underline dotted orange;
 }
@@ -58,18 +72,15 @@ body {
 .textbox h2 {
   text-decoration: underline dotted orange;
 }
-.access {
-  list-style: none;
-}
-.access p:last-of-type {
-  font-weight: bold;
-  font-size: 13pt;
-  text-decoration: underline;
-}
-.schedule h3 {
+
+.sightseeing_target,
+.hotspring_target {
   background-color: #f08300;
   width: 100%;
+  margin: 2em 0;
   text-align: center;
+  box-shadow: 0px 0px 0px 10px rgba(240, 131, 0, 0.9);
+  border: dashed 2px white;
 }
 .aquarium .aquarium_target {
   background-color: blue;
@@ -120,8 +131,8 @@ body {
   height: 320px;
   width: 850px;
   margin: 0 auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .textbox {
   border-bottom: 3px dashed;
@@ -130,10 +141,11 @@ body {
 
 #text {
   border: dotted yellow;
+  background-color: rgba(135, 206, 250, 0.9);
 }
 .about {
   text-align: center;
-  background-color: rgb(95, 197, 231);
+  background-color: rgba(95, 197, 231, 0.9);
   border-radius: 10px;
 }
 
