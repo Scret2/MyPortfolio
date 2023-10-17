@@ -26,13 +26,6 @@ body {
   justify-content: space-around;
   border-style: dotted;
 }
-#header_text {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 30px;
-  border: dotted yellow;
-  background-color: rgba(135, 206, 250, 0.6);
-}
 #img {
   width: 100%;
   height: calc(width * 2);
@@ -69,22 +62,14 @@ body {
   list-style: none;
 }
 
+.textbox > ul:nth-child(2) {
+  padding-left: 0;
+}
+
 .textbox h2 {
   text-decoration: underline dotted orange;
 }
 
-.sightseeing_target,
-.hotspring_target {
-  background-color: #f08300;
-  width: 100%;
-  margin: 2em 0;
-  text-align: center;
-  box-shadow: 0px 0px 0px 10px rgba(240, 131, 0, 0.9);
-  border: dashed 2px white;
-}
-.aquarium .aquarium_target {
-  background-color: blue;
-}
 .sightseeing {
   margin: 0 auto;
   width: 100%;
@@ -139,10 +124,6 @@ body {
   text-align: center;
 }
 
-#text {
-  border: dotted yellow;
-  background-color: rgba(135, 206, 250, 0.9);
-}
 .about {
   text-align: center;
   background-color: rgba(95, 197, 231, 0.9);
@@ -163,6 +144,7 @@ body {
   background-color: #ffdead;
   padding: 30px;
   margin-top: 100px;
+  margin-bottom: 0;
   text-align: center;
   list-style: none;
 }
@@ -393,14 +375,19 @@ body {
   .container {
     background-color: #583822;
   }
+  #header_text p {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  #text {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
   .sightseeing_photo img {
     width: 230px;
   }
   #mapid {
     width: 100%;
-  }
-  .aquarium .aquarium_target {
-    background-color: #87cefa;
   }
   .schedule h3 {
     background-color: rgb(184, 184, 0);
@@ -579,5 +566,31 @@ body {
     font-size: 65px;
     font-family: monospace;
     transform: skewY(3deg);
+  }
+  #header_text {
+    margin-bottom: 30px;
+    border: dotted yellow;
+    background-color: rgba(135, 206, 250, 0.6);
+  }
+  #text {
+    border: dotted yellow;
+    background-color: rgba(135, 206, 250, 0.9);
+  }
+  .sightseeing_target,
+  .hotspring_target {
+    background-color: #f08300;
+    width: 100%;
+    margin: 2em 0;
+    text-align: center;
+    box-shadow: 0px 0px 0px 10px rgba(240, 131, 0, 0.9);
+    border: dashed 2px white;
+  }
+  .aquarium .aquarium_target {
+    background-color: blue;
+    width: 100%;
+    margin: 2em 0;
+    text-align: center;
+    box-shadow: 0px 0px 0px 10px rgba(0, 0, 240, 0.9);
+    border: dashed 2px white;
   }
 }
