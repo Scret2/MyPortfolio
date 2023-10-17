@@ -175,7 +175,7 @@ scroll_right ｜右から出現
   -moz-transition: 0.8s ease-in-out;
   -o-transition: 0.8s ease-in-out;
   transition: 0.8s ease-in-out;
-  transform: translateX(100%);
+  transform: translateX(100vw);
   opacity: 0;
   filter: alpha(opacity=0);
   -moz-opacity: 0;
@@ -331,6 +331,7 @@ scroll_right ｜右から出現
   background-color: #c6ae8f;
   color: #d0d0d0;
   text-align: center;
+  overflow: hidden;
 }
 #contact_title {
   font-size: 30px;
