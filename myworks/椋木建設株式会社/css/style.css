@@ -453,10 +453,10 @@ figcaption {
 }
 figure :hover {
   opacity: 1;
+  background: linear-gradient(to bottom right, rgb(255, 255, 255, 0.1), rgb(90, 90, 90));
 }
 figcaption :hover {
   opacity: 1;
-  background: linear-gradient(to bottom right, rgb(255, 255, 255, 0.1), rgb(90, 90, 90));
 }
 /*recruit.html*/
 #recruit_top p {
@@ -493,24 +493,30 @@ figcaption :hover {
   margin-right: 20px;
 }
 .contact_form {
-  text-align: center;
+  text-align: left;
   background-color: #e6bfab;
   margin: 40px 30px 30px 30px;
   line-height: 2.5;
-  padding-top: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+.wpcf7-form-control {
+  width: 100%;
+  box-sizing: border-box;
 }
 input.size {
   width: 600px;
 }
 .contact_form .form-flex {
   display: flex;
-  justify-content: center;
 }
 .wpcf7-list-item-label .contact_form span {
   margin-top: 20px;
+}
+.sa {
+  text-decoration: underline #e99f86;
 }
 /*PCの設定*/
 @media screen and (max-width: 1024px) {
@@ -529,9 +535,7 @@ input.size {
   .concept .concept_top {
     font-size: 35px;
   }
-  #service {
-    margin-bottom: 0px;
-  }
+
   .page {
     grid-template-rows: repeat(8, 300px);
     grid-template-columns: 0;
@@ -552,27 +556,19 @@ input.size {
   }
   .build {
     grid-row: 1;
-    margin-left: 20px;
-    margin-right: 20px;
   }
   .building p:first-child {
     text-align: center;
   }
   .reform {
     grid-row: 3;
-    margin-left: 20px;
-    margin-right: 20px;
   }
 
   .home {
     grid-row: 5;
-    margin-left: 20px;
-    margin-right: 20px;
   }
   .contact {
     grid-row: 7;
-    margin-left: 20px;
-    margin-right: 20px;
   }
 
   /*company.html*/
@@ -744,12 +740,9 @@ input.size {
     margin-right: 20px;
   }
   /*contact.html*/
-  .contact_form .form-flex {
-    display: inherit;
-  }
   input.size {
     width: 300px;
-    line-height: 1.5;
+    line-height: 1;
   }
 }
 
