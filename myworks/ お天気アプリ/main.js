@@ -27,7 +27,7 @@ let weatherCodes =
               $("#mino_weather").append(arr[0]["timeSeries"][0]["areas"][0]["weathers"][0], "<br>");
               $("#mino_weather").append(arr[0]["timeSeries"][0]["areas"][0]["winds"][0], "<br>");
               let wcode = arr[0]["timeSeries"][0]["areas"][0]["weatherCodes"][0];
-              wcode = 400;
+              wcode = 300;
               weatherCodes = $("#mino_weather").append(`<img src="images/` + tr[wcode] + `">`);
               $("#myportfolio").css("color", "#ff8c00");
               if (Math.floor(wcode / 100) == 2) {
@@ -40,6 +40,81 @@ let weatherCodes =
                 //雨
                 $("body").css("background-image", 'url("./images/weather_3.jpg")');
                 $("#myportfolio").css("color", "#fff");
+                particlesJS("particles-js", {
+                  particles: {
+                    number: {
+                      value: 100,
+                      density: {
+                        enabled: true,
+                        value_area: 1000,
+                      },
+                    },
+                    color: {
+                      value: "fff",
+                    },
+                    shape: {
+                      type: "image",
+                      stroke: {
+                        width: 10,
+                        color: "fff",
+                      },
+                      image: {
+                        src: "./images/water.png",
+                        width: 120,
+                        height: 120,
+                      },
+                    },
+                    opacity: {
+                      value: 0.7,
+                      random: false,
+                      anim: {
+                        enable: false,
+                        speed: 2,
+                        opacity_min: 0.1,
+                        sync: false,
+                      },
+                    },
+                    size: {
+                      value: 35,
+                      random: true,
+                      anim: {
+                        enable: false,
+                        speed: 50,
+                        opacity_min: 0.1,
+                        sync: false,
+                      },
+                    },
+                    line_linked: {
+                      enable: false,
+                    },
+                    move: {
+                      enable: true,
+                      speed: 15,
+                      direction: "bottom",
+                      straight: true,
+                      out_mode: "out",
+                      bounce: false,
+                      attract: {
+                        enable: true,
+                        rotateX: 700,
+                        rotateY: 500,
+                      },
+                    },
+                  },
+                  interactivity: {
+                    detect_on: "canvas",
+                    events: {
+                      onhover: {
+                        enable: false,
+                      },
+                      onclick: {
+                        enable: false,
+                      },
+                      resize: true,
+                    },
+                  },
+                  retina_detect: true,
+                });
               } else if (Math.floor(wcode / 100) == 4) {
                 //雪
                 $("body").css("background-image", 'url("./images/weather_4.jpg")');
